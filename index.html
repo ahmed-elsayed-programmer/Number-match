@@ -2,22 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Match</title>
   </head>
   <body>
     <main id="game-area">
       <div class="stats">
-        <h3>
-          Score <span id="currentscore">2</span> /
-          <span id="totalAvailable">20</span>
-        </h3>
-        <p class="items">
-          <span id="number">6</span> <span id="item-name">ducks</span>
-        </p>
-        <div class="match-buttons">
-            <button>&#10003</button>
-            <button>&#10007</button>
+       <div id="statsContatn"> 
+           <h3>
+        Score <span id="currentscore">2</span> /
+        <span id="totalAvailable">20</span>
+      </h3>
+      <p class="items">
+        <span id="number">6</span> <span id="item-name">ducks</span>
+      </p>
+      <div class="match-buttons">
+          <button>&#10003</button>
+          <button>&#10007</button></div>
         </div>
       </div>
       <div class="imageArea">
@@ -28,7 +30,11 @@
             <p class="space-y">&#9654; hit thumbs up if the number of items matches the display number</p>
             <p class="space-y">&#9654; thumbs down if no match!</p>
             <p class="space-y">You have <span id="timeSetting">3</span> seconds to decide.</p>
-          </div>
+        <button id="play-button">Play</button> 
+        </div>
+        <div id="imageContainer">
+            <img src="" alt="">
+        </div>
       </div>
     </main>
   </body>
